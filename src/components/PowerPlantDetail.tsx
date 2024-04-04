@@ -9,8 +9,8 @@ export default function PowerPlantDetail({powerplant}: PowerPlantDetailProps) {
         console.log("PowerPlantDetail",powerplant);
     }, [powerplant]);
   return (
-    <div className="p-4">
-      <h1 className="text-xl">Power Plant Detail</h1>
+    <div className="col-span-1 p-8 bg-white rounder shadow">
+      <h1 className="text-2xl mb-8 font-bold">Power Plant Detail</h1>
       {powerplant ? <ul>
         {
             Object.keys(dataPointMapping).map((key: string) => {

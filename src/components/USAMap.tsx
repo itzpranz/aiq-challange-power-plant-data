@@ -183,10 +183,10 @@ export default function USAMap({ onStateSelected, onPowerPlantSelected, markers 
           .text((marker) => `${marker.PNAME}
           (${convertPowerPlantNetGeneration(marker)})`);
   
-  }, [markers]);
+  }, [markers, margin.left, margin.right, selectedState, onPowerPlantSelected]);
       
     return (
-        <div className="us-map bg-gray-200 dark:bg-gray-900">
+        <div className="us-map bg-white shadow rounded">
         </div>
     )
 }
